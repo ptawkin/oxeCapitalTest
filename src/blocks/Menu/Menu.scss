@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+
+  &_item {
+    padding: 2px;
+    font-family: 'Roboto Condensed';
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+    }
+  }
+}

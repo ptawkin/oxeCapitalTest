@@ -1,0 +1,21 @@
+.header {
+  height: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 8px -4px rgba(0, 0, 0, 0.6);
+
+  &_part {
+    &__left {
+margin-right: 150px;
+    }
+  }
+
+  &_logo {
+    display: block;
+
+    & img {
+      height: 100px;
+    }
+  }
+}

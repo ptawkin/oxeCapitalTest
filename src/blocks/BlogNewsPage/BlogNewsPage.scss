@@ -1,4 +1,58 @@
-.blog-item-page {
-  margin: 180px 0 0 220px;
+.blog-news-page {
   background: #f9f9f9;
+  box-sizing: border-box;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: left;
+  }
+
+  &__button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #888686;
+
+    &:hover {
+      color: #656262;
+      cursor: pointer;
+    }
+  }
+
+  &__part {
+
+    &_left {
+      padding: 180px 0 0 220px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 80px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 42.52px;
+    letter-spacing: 0.96px;
+  }
+
+  &__text {
+    width: 624px;
+    color: #050505;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: justify;
+  }
+
+  &__img {
+
+    & img {
+      width: 688px;
+    }
+  }
 }
