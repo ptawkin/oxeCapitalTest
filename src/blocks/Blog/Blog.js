@@ -20,8 +20,8 @@ import BlogNewsPage from "../BlogNewsPage/BlogNewsPage";
 
 
 const mapStateToProps = (state) => ({
-    blogNewsIsOpen: state.blogNewsIsOpen,
-    currentNewsId: state.currentNewsId,
+    blogNewsIsOpen: state.blogNewsPage.blogNewsIsOpen,
+    currentNewsId: state.blogNewsPage.currentNewsId,
 });
 
 const mapDispatchToProps = (dispatch) => {

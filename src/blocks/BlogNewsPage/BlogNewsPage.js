@@ -14,7 +14,7 @@ import openBlogNewsPage from "../../store/actions/openBlogNewsPage";
 import {connect} from "react-redux";
 
 const mapStateToProps = (state) => ({
-    currentNewsId: state.currentNewsId,
+    currentNewsId: state.blogNewsPage.currentNewsId,
 });
 
 // const mapDispatchToProps = (dispatch) => {
@@ -24,30 +24,26 @@ const mapStateToProps = (state) => ({
 // };
 
 function BlogNewsPage(props) {
-    console.log('blogNewsPage')
 
     const {
         currentNewsId,
     } = props;
 
-    console.log(props)
-    console.log('currentNewsId', currentNewsId)
-
     return (
         <div className={'blog-news-page'}>
-            {/*{currentNewsId && (*/}
+            {currentNewsId && (
                 <div className={'blog-news-page__content'}>
                     <div className={'blog-news-page__button'}>
                         Назад к блогу
                     </div>
                     <div className={'blog-news-page__part blog-news-page__part_left'}>
                         <div className={'blog-news-page__header'}>
-                            {/*{data[currentNewsId].title}*/}
-                            {data[0].title}
+                            {data[currentNewsId].title}
+                            {/*{data[0].title}*/}
                         </div>
                         <div className={'blog-news-page__text'}>
-                            {/*{data[currentNewsId].content}*/}
-                            {data[0].content}
+                            {data[currentNewsId].content}
+                            {/*{data[0].content}*/}
                         </div>
                     </div>
                     <div className={'blog-news-page__part blog-news-page__part_right'}>
@@ -57,7 +53,7 @@ function BlogNewsPage(props) {
                         </div>
                     </div>
                 </div>
-            {/*)}*/}
+            )}
         </div>
     );
 }
