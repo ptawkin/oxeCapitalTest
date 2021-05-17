@@ -1,9 +1,11 @@
 .menu {
-  display: flex;
 
-  &_item {
+  &__items {
+    display: flex;
+  }
+
+  &__item {
     padding: 2px;
-    font-family: 'Roboto Condensed';
     color: rgba(0, 0, 0, 0.9);
     font-size: 16px;
     font-weight: 300;
@@ -17,6 +19,70 @@
     &:focus,
     &:active {
       cursor: pointer;
+    }
+  }
+
+  &__burger-icon {
+    font-size: 12px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1824px) {
+  .menu {
+    &__item {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 1224px) {
+  .menu {
+    &__item {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    &__item {
+      font-size: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+
+    &__items {
+      display: none;
+    }
+
+    &__item {
+      padding: 10px;
+      background-color: #fff;
+      border-bottom: 1px solid rgba(73, 71, 71, 0.3);
+      font-size: 12px;
+      text-align: left;
+    }
+
+    &__open {
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: -10px;
+      left: 0;
+      margin: 0 10px;
+      padding: 10px;
+      box-sizing: border-box;
     }
   }
 }

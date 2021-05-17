@@ -1,5 +1,4 @@
 import actionTypes from '../actions/actionTypes';
-import data from "../../data/blogNewsDada.json";
 
 const initialState = {
     blogNewsIsOpen: false,

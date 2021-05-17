@@ -37,8 +37,6 @@ function Blog(props) {
         openBlogNewsPage,
     } = props;
 
-    console.log('blog props', props)
-
     const handleClick = React.useCallback((e) => {
         let item = e.target;
         let itemId;
